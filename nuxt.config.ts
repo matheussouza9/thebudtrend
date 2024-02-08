@@ -1,6 +1,4 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import fs from 'fs'
-
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
@@ -12,12 +10,6 @@ export default defineNuxtConfig({
     provider: 'storyblok',
     storyblok: {
       baseURL: 'https://a.storyblok.com',
-    },
-  },
-  devServer: {
-    https: {
-      key: fs.readFileSync('./localhost-key.pem').toString(),
-      cert: fs.readFileSync('./localhost.pem').toString(),
     },
   },
   app: {
