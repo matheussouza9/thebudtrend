@@ -10,7 +10,7 @@
       <nuxt-img
         v-if="props.card_stamp"
         :src="props.card_stamp.filename"
-        class="absolute -top-1/4 right-4 rounded-full border-4"
+        class="absolute -top-1/3 right-4 rounded-full border-4"
         :style="{ borderColor: props.card_color }"
         width="60"
         height="60"
