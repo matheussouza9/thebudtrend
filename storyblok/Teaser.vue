@@ -1,5 +1,5 @@
 <template>
-  <div v-editable="blok" class="flex flex-col items-center py-4 mb-4">
+  <div v-editable="blok" class="flex flex-col items-center py-3 mb-4">
     <nuxt-img
       v-if="blok.head_image"
       :src="blok.head_image.filename"
