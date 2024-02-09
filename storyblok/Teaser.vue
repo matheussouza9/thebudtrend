@@ -1,16 +1,18 @@
 <template>
-  <div v-editable="blok" class="flex flex-col items-center py-4 gap-2">
+  <div v-editable="blok" class="flex flex-col items-center py-4 mb-4">
     <nuxt-img
       v-if="blok.head_image"
       :src="blok.head_image.filename"
-      format="webp"
+      width="70"
+      height="70"
+      class="mb-3"
     />
 
-    <div class="font-neulis text-5xl text-center">
+    <div class="font-neulis text-4xl md:text-5xl text-center">
       {{ blok.headline }}
     </div>
 
-    <div class="text-center text-sm" v-html="subtitle"></div>
+    <div class="text-xs md:text-sm" v-html="subtitle"></div>
   </div>
 </template>
 
